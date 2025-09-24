@@ -1,0 +1,13 @@
+.first {
+            display:block;
+            color: red;
+         }
+         .second{
+            display; inline;
+            color: green;
+         }
+         /third{
+            display: inline-block;
+            color: rgb(245, 235, 235);
+            background-color: rgb(0,0,0);
+         }
