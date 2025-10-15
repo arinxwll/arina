@@ -137,8 +137,8 @@ padding: 70px 20px;
     animation:  spin 2s linear infinite;
 }
 @keyframes jump {
-    0% {transform:translateY(0);}
-    50% {transform: translateY(-50px);}
+   0% {transform:translateY(0);}
+    50% {transform: translateY(- 50px);}
     100% {transform: translateY(0);} 
 }
 .ball{
@@ -200,3 +200,85 @@ to {
     transform: translateY(0);
 } 
 }
+.cardd{
+    width: 260px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    transition: transform .2s, box-shadow .2s;
+}
+.cardd:hover{
+transform:  translateY(-6px);
+box-shadow: 0 13px 28px rgba(0,0,0, .15);
+}
+.grad{
+    min-height: 160px;
+    display: grid; place-items: center;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(45deg, #8b5cf6, #06b6d4, #22c55e);
+    background-size: 300% 300%;;
+    animation: shift 8s ease infinite;
+    border-radius: 16px;
+}
+@keyframes shift{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;} 
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    gap: 10px;
+    border-radius:7px;
+}
+.badg{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background:#25ebc3;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius:9999px;
+}
+.auth{
+    font:16px/1.3 system-ui,Arial;
+    max-width: 320px;
+     margin:auto;
+     padding: 10px;
+    border: 1px;
+}
+.auth_title{
+    margin:0 0 8px;
+    font-size: 18px
+}
+.auth_label{
+    display:block;
+    margin:8px 0;
+}
+.auth_input{
+    display: block;
+    margin: 100%;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+}
+.auth_input:focus{
+    outline: none;
+    border-color: #2563eb;
+    }
+    .auth_btn{
+        display: block;
+        width: 100%;
+        height: 36px;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 16px;
+    }
+    .auth_btn:hover{
+        background: #1e40af;
+    }
