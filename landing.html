@@ -67,11 +67,7 @@
                                     <h3>заголовок</h3>
                                     <p>немного текста про карточку</p>
                                     <div class="grad">мягкий грандиентный фон</div>
-                                </div>
-                                <div class="cart">Кофе
-                                    <span class="badg">NEW</span> 
-                                    <img src="Без названия (2).jfif" alt="1">
-                                    <p>цена:2р</p>
+                    </div>
                                 </div>
                                 <form action="/search" method="GET">
                                     <label for="q">поиск</label>
@@ -96,8 +92,47 @@
                                     </label>
                                      <button class="auth_btn" type="submit">создать</button>
                                     </form>
-                            
+                                    <form action="/send" method="post">
+                                        <input type="text" name="name" placeholder="имя" required>
+                                        <button type="submit">отправить</button>
+                                        <botton type="reset">сбросить</botton>
+                                    <form class="form" action="/send" method="POST">
+                                        <button class="form_button form_button--primary" type="submit">
+                                            <span class="form_button-icon" aria-hidden="true"> ❤</span>
+                                            <span class="form_button-text">отправить</span>
+                                            <button class="form_button form_button--ghost" type="button" id="check">
+                                                проверить данные
+                                            </button>
+                                            <label class="form_option">
+                                                <input class="form_checkbox" type="checkbox" id="agree" name="agree" value="yes">
+                                                <span class="form_option-text">согласен с условиями</span>
+                                            </label>
+                                            <fieldset class="form_group">
+                                                <legend class="form_label">пол</legend>
+                                                <label class="form_option">
+                                                    <input class="form_radio" type="radio" name="gender" value="male">
+                                                    <span class="form_option-text">мужской</span>
+                                                </label>
+                                                <label class="form_option">
+                                                    <input class="form_radio" type="radio" name="gender" value="female">
+                                                    <span class="form_option-text">женский</span>
+                                                </label>
+                                            </fieldset>
+                                            <form class="form" action="/upload" method="POST" enctype="multipart/form-data">
+                                                <label class="form_option">
+                                                    <span class="form_option-text">аватар</span>
+                                                    <input class="form_file" type="file" name="avatar" accert="image/*">
+                                                </label>
+                                            </form>
+                                            <form class="form" action="mailto:you@examle.com" method="POST" enctype="text/plain">
+                                                <input class="form_input" type="text" name="name" placeholder="имя">
+                                                <input class="form_input" type=""
 
+
+                                            </form>                                    
+                                        </button>
+                                    </form>
+                                    </form>
                                 </select>    
                             </div>
                     </div>
