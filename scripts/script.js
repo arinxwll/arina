@@ -222,3 +222,64 @@ for (let letter of fruitword.toLowerCase()) {
     if (letter === "a") fruitwordcount++;
 }
 console.log(`букв в слове ${fruitword}`, fruitwordcount)
+
+function sum(a, b) {
+    console.log (a+b);
+}
+sum (5,7);
+
+function sum(a, b) {
+    return a + b;
+}
+
+let result =  sum(1,2);
+alert( result );
+
+function test() {
+    return 10;
+    console.log("это не выполняется");
+}
+
+const generateSumFinder = () => {
+    const sum = (a, b) => a + b;
+    return sum;
+};
+
+const sum = generateSumFinder();
+sum(1, 5);
+
+function hello () {
+    console.log ("привет");
+}
+const hi = function() {
+    console.log ("привет");
+}
+setInterval (function() {
+    console.log("тик");
+}1000)
+
+const square = x => x * x;
+console.log(square(5));
+
+let result = square(4);
+console.log(result);
+
+const obj = {
+    name: "test",
+    show() {
+    console.log(this.name);
+    }
+};
+obj.show();
+
+const obj = {
+    name: "test",
+    show: () => {
+    console.log(this.name);
+    }
+};
+obj.show();
+
+function show () {
+    console.log(arguments)
+}
