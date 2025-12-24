@@ -108,3 +108,129 @@ const data = {level: 3}
 localStorage.setItem("game", JSON.stringify(data));
 
 const game =JSON.parse(localStorage.getItem("game"));
+
+let x = 10;
+let y = 5;
+console.log(x+y);
+
+let name = "JS";
+console.log(`I love ${name}`);
+
+let price = 100;
+let discount = 20;
+let finalPrice = price - discount;
+console.log(finalPrice);
+
+let isOnline = true;
+console.log(isOnline);
+
+let n = 7;
+let um = 7*2;
+console.log(um);
+
+let message =" ";
+console.log(message);
+
+let num = [1,2,3];
+console.log(num.length);
+
+let stroka = ["a", "b", "c"];
+console.log(stroka[0]);
+
+num.push(10);
+console.log(num);
+
+let remove = num.pop();
+console.log(remove);
+
+for (let i = 0; i < num.length; i++) {
+console.log(num[i]);
+}
+
+let sum = 0;
+for (let i = 0; i < num.length; i++) {
+sum += num[i];
+}
+
+let min = num[0];
+console.log(min);
+    let newn = [];
+    for (let i = 0; i < num.length; i++)
+    {
+        newn.push(num[i]*2);
+    }
+
+console.log(newn);
+
+let find = false;
+for (let i = 0; i < num.length; i++){
+    if(num[i] === 5) {
+        find = true;
+    }
+}
+
+for ( let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+for (let i = 5; i >= 1; i--){
+    console.log(i);
+}
+for (let i = 1; i <= 10; i++){
+ if(i % 2 === 0){
+    console.log(i)
+ }
+}
+
+let summa = 0;
+for (let i = 1; 1 <= 10; i++){
+    sum += i;
+}
+console.log(summa);
+
+for(let i = 0; i<3; i++) {
+    console.log("hello");
+}
+
+let strok = "JS";
+for (let i = 0; i < strok.length; i++){
+    console.log(strok[i]);
+}
+/*
+function summa(a, b){
+return a + b;
+}*/
+console.log(sum(5,3));
+
+function square(n){
+return n*n;
+}
+
+/*function n(name) {
+    console.log(`hello, ${name}`);
+}
+n("arina");*/
+
+function is(num) {
+    return num > 0;
+}
+console.log(is(10));
+console.log(is(-5));
+
+function get() {
+    return 100;
+}
+console.log(get());
+
+ let i = {
+    name:"arina",
+    age:14
+
+ };
+ console.log(i);
+ console.log(i.name);
+ console.log(i.age);
+
+ i.school="208";
+ console.log(i);
+ console.log(i.school);
